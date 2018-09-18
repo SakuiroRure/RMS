@@ -1,0 +1,36 @@
+@import (reference) "../../style/mixin.less";
+#login_container{
+    font-family: "yahei";
+    background:#fff;
+    text-align:center; 
+    .main{
+        width:100vw;
+        height:100vh;
+        background:url('../../assets/login-bg.png') no-repeat;
+        background-size:cover;
+        overflow: hidden;
+        position: relative;
+        .logo{
+            width:62px;
+            position: absolute;
+            right:30px;
+            top:30px;
+        }
+        .info{
+            width:380px;
+            height:240px;
+            border-radius: 12px;
+            background:rgba(255,255,255,.6);
+            position: absolute;
+            right:100px;
+            top:40%;
+            transform: translateY(-50%);
+            .info_sec{
+                img{
+                    width:40px;
+                }
+            }
+        }
+    }
+}
+
