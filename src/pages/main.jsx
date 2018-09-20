@@ -31,8 +31,8 @@ class App extends Component {
         return (
             <div id="main_container">
                 <Top/>
-                <Catalog/>
-                <main className={this.state.collapsed?"main":"noe"}><Content/></main>
+                <Catalog change={this.toggleCollapsed.bind(this)}/>
+                <main className={this.state.collapsed?"off":"on"}><Content/></main>
             </div>
         )
     }

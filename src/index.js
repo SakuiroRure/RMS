@@ -7,8 +7,9 @@ import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import store from './store/store'
 import 'antd/dist/antd.less';
-import './utils/font-awesome-4.7.0/css/font-awesome.min.css'
-import './style/base.css'
+import './style/animate.css';
+import './utils/font-awesome-4.7.0/css/font-awesome.min.css';
+import './style/base.less';
 
 
 FastClick.attach(document.body);

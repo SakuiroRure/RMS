@@ -9,18 +9,12 @@ class App extends Component {
         this.state = {
             collapsed: false,
         }
-
     }
     componentDidMount() {
 
     }
     back() {
         this.props.history.goBack();
-    }
-    toggleCollapsed = () => {
-        this.setState({
-            collapsed: !this.state.collapsed,
-        });
     }
     render() {
         return (

@@ -34,6 +34,7 @@ class App extends Component {
         this.setState({
             collapsed: !this.state.collapsed,
         });
+        this.props.change()
     }
     render() {
         return (
@@ -55,7 +56,7 @@ class App extends Component {
                         <Menu.SubMenu key={index} title={<span><Icon type="mail" /><span>{cata.name}</span></span>}>
                             {cata.sub.map((sub, i) => (
                                 <Menu.Item key={i}>
-                                    <NavLink to="/home">{sub.name}</NavLink>
+                                    <NavLink to="/table">{sub.name}</NavLink>
                                 </Menu.Item>
                             ))}
                         </Menu.SubMenu>
